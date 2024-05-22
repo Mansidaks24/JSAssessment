@@ -9,7 +9,7 @@ Assessment Requirements
 */
 
 // create a variable to hold your NFT's
-const NFTs = [];
+const NFTs = [];//we use const as it is immutable and can store permanent values;
 
 // this function will take in some values as parameters, create an
 // NFT object using the parameters passed to it for its metadata, 
@@ -28,9 +28,10 @@ console.log("MINTED:" +name);
 // and print their metadata with console.log()
 function listNFTs() {
   for(let i = 0; i < NFTs.length; i++){
-      console.log("\nName:\t \t" + NFTs[i].name);
+      console.log("\nID:"+ (i+1))
+      console.log("Name:\t \t" + NFTs[i].name);// Also I can Use console.log(NFTs[i]);
       console.log("Eyecolor: \t" + NFTs[i].eyecolor);
-      console.log("Accessory: \t" + NFTs[i].accessory);
+      console.log("Accessory: \t" + NFTs[i].accessory);//another way to access object property is object_name[Property_name];
 }
 }
 
